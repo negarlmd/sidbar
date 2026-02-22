@@ -4,7 +4,7 @@
 
 - 📫 How to reach me **negarlmd704@gmail.com**
 
-- 👨‍💻 All of my projects are available at **[https://github.com/negarlmd](https://github.com/negarlmd)**
+- 👨‍💻 All of my projects are available at **[https://[github.com/negarlmd](https://github.com/negarlmd](https://negarlmd.github.io/sidbar/))**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
