@@ -1,0 +1,97 @@
+:root {
+    --bg-color: rgb(36, 135, 180);
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    width: 30%;
+    overflow-x: hidden;
+  
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+        inset 5px 5px 20px rgba(255, 255, 255, 0.1),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.2);
+    >ul {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-left: 5px;
+        padding-top: 40px;
+        >li {
+            height: 15%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: relative;
+            list-style: none;
+            width: 90%;
+            border-radius: 50px 0 0 50px;
+            margin-left: 10%;
+
+            &:hover::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 95%;
+                height: 80%;
+                border-radius: 50px;
+                transform: translate(-50%, -50%);
+
+                transition: all .3s;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, .1),
+                    inset 2px 2px 3px rgba(255, 255, 255, 0.1),
+                    inset -3px -3px 3px rgba(0, 0, 0, .1);
+            }
+
+            &.active::before {
+                opacity: 1;
+                width: 95%;
+                left: 50%;
+            }
+
+            &.active {
+                a::before {
+                    content: "";
+                    position: absolute;
+                    top: -30px;
+                    right: 0;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+
+                }
+                a::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -30px;
+                    right: 0;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+
+                }
+            }
+
+            >a {
+
+                position: relative;
+                display: flex;
+                text-decoration: none;
+                width: 50%;
+                color: #E9D5DA;
+            }
+
+            >svg {
+                width: 20px;
+                height: 20px;
+                color: #E9D5DA;
+
+            }
+        }
+    }
+}
